@@ -1,0 +1,11 @@
+Verfügbarkeit  erlaubte Ausfallzeit pro Jahr
+     99.0%        5256.0 Minuten (= 87.6 Stunden)
+     99.9%         525.6 Minuten (= 8.8 Stunden)
+    99.99%          52.6 Minuten
+   99.999%           5.3 Minuten
+
+Reihenschaltung (beide Teile müssen laufen): 0.999 * 0.999 = 0.998001
+Parallelschaltung (eines genügt):            1-(1-0.999)^2 = 0.999999
+
+Kette: Cluster-Knoten 2x 99,9 % parallel, davor ein einzelner Switch mit 99,9 %:
+  Gesamt 99.8999 %  -> der einzelne Switch begrenzt die Gesamtverfügbarkeit

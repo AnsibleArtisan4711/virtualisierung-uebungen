@@ -1,0 +1,8 @@
+Knoten                 T1 Knoten hart ausschalten
+Netzwerk Cluster       T2 Cluster-Netzwerkkabel ziehen
+Netzwerk Verwaltung    KEIN TEST
+Speicherpfad           T4 Speicherpfad trennen
+Zeuge                  T3 Zeugen abschalten
+Dienst auf VM          KEIN TEST
+
+Lücken: Netzwerk Verwaltung, Dienst auf VM

@@ -1,0 +1,11 @@
+Volume 2000 GB, Reserve 20 %, nutzbar 1600 GB
+  web1     120 GB
+  web2     120 GB
+  db1      600 GB
+  app1     250 GB
+  file1    500 GB
+Summe der virtuellen Festplatten: 1590 GB -> Platz reicht, frei 10 GB
+
+Koordinator vor dem Ausfall: hv01
+hv01 fällt aus -> neuer Koordinator (einfaches Modell: erster verbleibender Knoten): hv02
+Zugriff der übrigen Knoten bleibt direkt; nur die Verwaltung der Metadaten wandert.

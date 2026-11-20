@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Add-CauClusterRole -ClusterName CL01 -DaysOfWeek Sunday -WeeksOfMonth 2 -EnableFirewallRules   # Selbstaktualisierung einrichten
+Invoke-CauScan -ClusterName CL01                          # verfügbare Updates anzeigen
+Invoke-CauRun -ClusterName CL01 -MaxFailedNodes 1 -MaxRetriesPerNode 2   # Lauf starten

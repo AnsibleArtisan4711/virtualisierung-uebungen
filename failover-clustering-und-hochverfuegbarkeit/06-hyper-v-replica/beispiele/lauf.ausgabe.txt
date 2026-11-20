@@ -1,0 +1,6 @@
+Intervall   Daten je Zyklus   Übertragung   schlimmster Verlust (ca.)
+   0.5 min          20 MB          4 s         34 s
+     5 min         200 MB         40 s        340 s
+    15 min         600 MB        120 s       1020 s
+
+Übertragung länger als das Intervall? -> nein

@@ -1,0 +1,5 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Get-ClusterNode | Format-Table Name, State                 # Knotenzustand
+Get-ClusterGroup | Format-Table Name, OwnerNode, State     # Rollen und Besitzer
+Get-ClusterLog -Destination C:\Temp -TimeSpan 15           # Clusterprotokoll der letzten 15 Minuten sammeln
+Test-Cluster -Include "Storage"                            # nur Speichertests

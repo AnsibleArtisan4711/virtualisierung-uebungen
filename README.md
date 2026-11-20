@@ -9,6 +9,7 @@ Praxisübungen zur Virtualisierung mit Hyper-V unter Windows Server. Jede Reihe 
 | [`hyper-v-administration/`](hyper-v-administration/) | Hyper-V Administration (P05): 12 Module, 82,5 Stunden | Entwurf, nichts auf Windows ausgeführt |
 | [`proxmox-ve/`](proxmox-ve/) | Proxmox VE (P06): 14 Module, 86,25 Stunden | Entwurf, keine Proxmox-Befehle ausgeführt; Konzeptskripte (qemu-img, Bridge, Quorum u. a.) in einer Testumgebung ohne KVM |
 | [`vmware-vsphere-esxi/`](vmware-vsphere-esxi/) | VMware vSphere und ESXi (P07): 13 Module, 79,5 Stunden | Entwurf, kein ESXi und kein PowerCLI ausgeführt; Konzeptskripte in einer Testumgebung; Lizenzangaben Stand 20.11.2026, nicht bestätigt |
+| [`failover-clustering-und-hochverfuegbarkeit/`](failover-clustering-und-hochverfuegbarkeit/) | Failover-Clustering und Hochverfügbarkeit (P60): 8 Module, 100 Unterrichtseinheiten | Entwurf, nur Python-Modelle ausgeführt, kein Windows-Cluster und keine PowerShell verwendet |
 
 ## Lizenz
 

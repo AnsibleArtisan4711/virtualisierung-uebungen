@@ -1,0 +1,5 @@
+hv01: ok
+hv02: ok
+hv03: Betriebssystem Windows Server 2019 weicht von Windows Server 2022 ab; weniger als 2 Netzwerkkarten (Verwaltung/Cluster getrennt empfohlen); gemeinsamer Speicher nicht sichtbar; RAM 16 GB statt 32 GB (ungleich)
+
+Cluster möglich: nein - Punkte oben beheben

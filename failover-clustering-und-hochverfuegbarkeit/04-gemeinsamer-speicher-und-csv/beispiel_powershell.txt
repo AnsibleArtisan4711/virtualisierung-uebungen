@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Get-ClusterAvailableDisk | Add-ClusterDisk                 # freie Datenträger dem Cluster hinzufügen
+Add-ClusterSharedVolume -Name "Cluster Disk 1"             # als CSV einbinden (erscheint unter C:\ClusterStorage)
+Get-ClusterSharedVolume                                    # Zustand und Besitzer anzeigen

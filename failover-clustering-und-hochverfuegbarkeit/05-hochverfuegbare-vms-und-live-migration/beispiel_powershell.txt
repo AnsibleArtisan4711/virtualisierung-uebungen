@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Add-ClusterVirtualMachineRole -VMName web1                 # virtuelle Maschine hochverfügbar machen
+Move-ClusterVirtualMachineRole -Name web1 -Node hv02 -MigrationType Live   # Live-Migration
+(Get-ClusterGroup -Name web1).Priority = 3000              # Startpriorität setzen (Wertebereich in der Dokumentation prüfen)

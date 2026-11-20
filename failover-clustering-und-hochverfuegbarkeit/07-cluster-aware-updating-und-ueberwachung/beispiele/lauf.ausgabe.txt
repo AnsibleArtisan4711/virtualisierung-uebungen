@@ -1,0 +1,5 @@
+hv01: leeren (40 GB RAM verschieben) -> freier Platz übrig 62 GB -> patchen, dann zurück
+hv02: leeren (36 GB RAM verschieben) -> freier Platz übrig 58 GB -> patchen, dann zurück
+hv03: leeren (30 GB RAM verschieben) -> freier Platz übrig 52 GB -> patchen, dann zurück
+
+Gesamtbelegung: 106 GB von 192 GB; für N+1 muss sie unter 128 GB liegen.

@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Enable-VMReplication -VMName web1 -ReplicaServerName hv-dr01 -ReplicaServerPort 80 -AuthenticationType Kerberos -ReplicationFrequencySec 300
+Start-VMInitialReplication -VMName web1
+Get-VMReplication | Format-Table VMName, State, Health   # Zustand prüfen

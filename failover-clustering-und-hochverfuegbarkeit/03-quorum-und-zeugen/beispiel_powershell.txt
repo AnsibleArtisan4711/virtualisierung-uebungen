@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt; Fachwissen, nicht gegen die Dokumentation geprüft)
+Get-ClusterQuorum                                          # aktuelle Quorum-Einstellung
+Set-ClusterQuorum -FileShareWitness \\fs01\zeuge           # Dateifreigabe als Zeuge
+Set-ClusterQuorum -NodeMajority                            # nur Knotenmehrheit

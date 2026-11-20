@@ -1,0 +1,4 @@
+# PowerShell (Textdatei, NICHT ausgeführt: es gab keinen Windows-Server-Cluster; Fachwissen, Cmdlet-Namen und Parameter nicht gegen die Dokumentation geprüft)
+Install-WindowsFeature -Name Failover-Clustering -IncludeManagementTools   # auf jedem Knoten
+Test-Cluster -Node hv01, hv02                                              # Eignung prüfen (Bericht lesen)
+New-Cluster -Name CL01 -Node hv01, hv02 -StaticAddress 10.60.0.100         # Cluster anlegen

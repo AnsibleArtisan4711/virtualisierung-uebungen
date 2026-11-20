@@ -1,0 +1,9 @@
+
+Ausfall von hv01: freier RAM auf den übrigen Knoten {'hv02': 24, 'hv03': 24}
+  dc-test  (hoch, 8 GB) -> hv02
+  db1      (hoch, 32 GB) -> KEIN Platz, bleibt aus
+  web1     (mittel, 16 GB) -> hv02
+
+Ausfall von hv02: freier RAM auf den übrigen Knoten {'hv01': 8, 'hv03': 24}
+  app1     (mittel, 24 GB) -> hv03
+  web2     (mittel, 16 GB) -> KEIN Platz, bleibt aus
