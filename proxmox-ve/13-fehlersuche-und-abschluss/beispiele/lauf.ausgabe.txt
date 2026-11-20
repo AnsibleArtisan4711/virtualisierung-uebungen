@@ -1,0 +1,23 @@
+ZEILE  : Nov 20 10:01:11 pve1 pvedaemon[812]: VM 100 qmp command failed - KVM virtualisation configured, but 
+URSACHE: KVM nicht verfügbar (verschachtelte Virtualisierung aus)
+PRÜFEN : Nested-Option am Host-Hypervisor prüfen (siehe nested_pruefen.sh)
+
+ZEILE  : Nov 20 10:02:03 pve1 pmxcfs[640]: [status] notice: cluster not ready - no quorum?
+URSACHE: Quorum fehlt (zu viele Knoten weg)
+PRÜFEN : pvecm status; Netzwerk/Corosync prüfen; nur im Notfall pvecm expected 1
+
+ZEILE  : Nov 20 10:03:44 pve1 pvestatd[701]: storage 'nas01' is not online
+URSACHE: Speicher nicht erreichbar
+PRÜFEN : Netzwerk/Freigabe prüfen; storage.cfg und Status
+
+ZEILE  : Nov 20 10:04:10 pve1 vzdump[950]: ERROR: Backup of VM 101 failed - no space left on device
+URSACHE: Speicher voll
+PRÜFEN : Belegung je Speicher, alte Backups/Snapshots prüfen
+
+ZEILE  : Nov 20 10:05:00 pve1 pvedaemon[813]: user anna@pve: permission denied - Permission check failed
+URSACHE: Rechte fehlen
+PRÜFEN : Benutzer, Rolle und Pfad prüfen (acl_modell.py)
+
+ZEILE  : Nov 20 10:06:30 pve1 pveproxy[790]: worker exited
+URSACHE: unbekannt (keine Regel)
+

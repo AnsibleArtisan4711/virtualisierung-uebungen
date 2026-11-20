@@ -1,0 +1,18 @@
+## 1. Abbild mit bekanntem Inhalt (Muster 0xaa)
+  read 4096/4096 bytes at offset 0
+
+## 2. Snapshot „vor-update“ anlegen und Inhalt ändern (Muster 0xbb)
+  read 4096/4096 bytes at offset 0
+  Snapshot list:
+  ID        TAG               VM SIZE                DATE     VM CLOCK
+  1         vor-update            0 B 2026-11-20 05:39:46 00:00:00.000
+
+## 3. Zurückrollen (-a): Inhalt ist wieder das alte Muster
+  read 4096/4096 bytes at offset 0
+
+## 4. Snapshot löschen (-d) und Prüfung
+  (keine Snapshots mehr)
+  No errors were found on the image.
+
+## 5. Beobachtung zur Größe: jede Änderung nach einem Snapshot belegt zusätzlichen Platz
+  belegt nach 8 MB Änderung mit Snapshot: 8.39 MiB

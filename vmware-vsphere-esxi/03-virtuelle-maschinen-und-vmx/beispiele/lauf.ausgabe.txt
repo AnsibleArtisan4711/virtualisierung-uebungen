@@ -1,0 +1,9 @@
+web01: 2048 MB, 2 vCPU
+  alle Regeln erfüllt
+alt01: 256 MB, 12 vCPU
+  Hinweis: Arbeitsspeicher unter 512 MB
+  Hinweis: mehr als 8 vCPUs (Grenze des kostenlosen ESXi)
+  Hinweis: Netzwerkkarte nicht vmxnet3
+  Hinweis: SCSI-Controller nicht pvscsi
+  Hinweis: keine Portgruppe (networkName)
+  Hinweis: Platte scsi0:0 ohne .vmdk

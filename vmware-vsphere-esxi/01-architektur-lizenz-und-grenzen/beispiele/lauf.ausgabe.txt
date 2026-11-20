@@ -1,0 +1,8 @@
+Labor klein     passt
+Cluster-Wunsch  PASST NICHT
+   - VM db01 mit 12 vCPUs, erlaubt 8
+   - Funktion nicht verfügbar: kein vCenter
+   - Funktion nicht verfügbar: kein vMotion
+   - Funktion nicht verfügbar: kein HA
+Backup-Wunsch   PASST NICHT
+   - Funktion nicht verfügbar: keine Sicherung über VADP

@@ -1,0 +1,7 @@
+local      dir       ok: backup,iso,vztmpl
+local-lvm  lvmthin   ok: images,rootdir
+nas-iso    nfs       ok: backup,images,iso
+pbs01      pbs       FALSCH: images nicht möglich für Typ pbs
+san-lvm    lvm       FALSCH: iso nicht möglich für Typ lvm
+
+Einträge mit Fehlern: 2

@@ -1,0 +1,11 @@
+## 1. Export als streamOptimized-VMDK mit Prüfsumme
+  SHA-256: 75668dde722d5aa7…
+
+## 2. Prüfsumme prüfen (unverändert)
+  OK
+
+## 3. Veränderte Kopie ⇒ Prüfsumme schlägt an
+  ABWEICHUNG (Datei verändert)
+
+## 4. Wiederimport (zurück nach monolithicSparse) und Inhalt vergleichen
+  Images are identical.

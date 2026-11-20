@@ -1,0 +1,7 @@
+1. Erste Sicherung (200 Blöcke)                  Chunks:  200  belegt:  819200 Bytes  Sicherungen: tag1
+2. Zweite Sicherung, nichts geändert             Chunks:  200  belegt:  819200 Bytes  Sicherungen: tag1, tag2
+3. Dritte Sicherung, 3 Blöcke geändert           Chunks:  203  belegt:  831488 Bytes  Sicherungen: tag1, tag2, tag3
+4. Prune: tag1 und tag2 entfernt (Chunks bleiben) Chunks:  203  belegt:  831488 Bytes  Sicherungen: tag3
+5. Speicherbereinigung (GC): 3 Chunks frei       Chunks:  200  belegt:  819200 Bytes  Sicherungen: tag3
+
+Ohne Deduplizierung wären drei Sicherungen je 819200 Bytes = 2457600 Bytes belegt; hier: 831488 Bytes nach Schritt 3.

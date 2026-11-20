@@ -1,0 +1,5 @@
+VM       Shares   Res.   Limit  Bedarf Zuteilung
+db01       2000   2000       -    6000     5143 MHz
+web01      1000    500    3000    4000     2071 MHz
+test01      500      0    1000    3000      786 MHz
+Summe: 8000 von 8000 MHz

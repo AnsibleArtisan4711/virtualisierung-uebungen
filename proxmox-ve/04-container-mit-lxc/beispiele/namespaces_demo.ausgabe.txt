@@ -1,0 +1,17 @@
+## 1. Eigener Rechnername im UTS-Namensraum
+Rechnername außen: vm
+Rechnername im Namensraum: container01
+Rechnername außen danach: vm
+
+## 2. Eigener Prozess-Namensraum (PID)
+Prozesse außen (Anzahl): 81
+Prozesse im Namensraum (Anzahl): 4
+Die Shell hat dort die PID 1
+
+## 3. Eigener Netzwerk-Namensraum
+Schnittstellen außen: 4
+Schnittstellen im Namensraum: 1
+ lo
+
+## 4. Folgerung
+Ein Container teilt den Kernel des Hosts; er hat eigene Sicht auf Namen, Prozesse und Netz. Eine VM hat dagegen einen eigenen Kernel.

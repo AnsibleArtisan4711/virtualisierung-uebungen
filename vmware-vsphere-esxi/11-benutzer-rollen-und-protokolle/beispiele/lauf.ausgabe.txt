@@ -1,0 +1,9 @@
+Nutzer Objekt                 Recht    Ergebnis
+anna  ordner/produktion/web01 ein/aus  ERLAUBT über ordner/produktion
+anna  ordner/produktion/web01 ändern   NEIN
+anna  ordner/test/x          ansehen  NEIN
+ben   ordner/test/x          ändern   ERLAUBT über Wurzel
+cem   ordner/produktion/db01 ansehen  NEIN
+
+Fehlschläge: root von 10.7.0.99 x3, anna von 10.7.0.5 x1
+Warnung: root von 10.7.0.99 (mindestens 3 Fehlschläge)

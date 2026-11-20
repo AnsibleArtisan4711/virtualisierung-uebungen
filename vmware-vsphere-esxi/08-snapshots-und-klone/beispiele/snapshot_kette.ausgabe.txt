@@ -1,0 +1,19 @@
+## 1. Basis: 4.25 MiB
+
+## 2. Kette basis <- s1 <- s2 (Größen)
+  basis  4.25 MiB
+  s1     2.25 MiB
+  s2     2.25 MiB
+
+## 3. Kette anzeigen
+  image: s2.qcow2
+  backing file: s1.qcow2
+  image: s1.qcow2
+  backing file: basis.qcow2
+  image: basis.qcow2
+
+## 4. Oberstes Abbild in die Basis zurückschreiben (commit s2 -> s1)
+  s1 danach: 4.25 MiB
+
+## 5. Lesen aus der Kette: erste 2 MB = Muster 0x22?
+  read 2097152/2097152 bytes at offset 0

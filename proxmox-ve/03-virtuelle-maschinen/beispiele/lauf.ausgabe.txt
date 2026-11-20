@@ -1,0 +1,7 @@
+VM web01: 2048 MB, 2 Kerne
+  alle Regeln erfüllt
+VM alt01: 256 MB, 1 Kerne
+  Hinweis: Speicher unter 512 MB
+  Hinweis: Netzwerkkarte ist nicht virtio (langsamer)
+  Hinweis: Gast-Agent nicht aktiviert
+  Hinweis: SCSI-Controller nicht virtio-scsi

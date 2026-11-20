@@ -1,0 +1,11 @@
+# VM 200 (web01)
+qm create 200 --name web01 --memory 2048 --cores 2 --net0 virtio,bridge=vmbr0
+qm set 200 --scsi0 local-lvm:16
+qm start 200
+
+# VM 201 (db01)
+qm create 201 --name db01 --memory 4096 --cores 2 --net0 virtio,bridge=vmbr1
+qm set 201 --scsi0 local-lvm:32
+qm start 201
+
+Summe: 2 VMs, 6144 MiB RAM, 48 GB Platte (Plan, nicht ausgeführt)

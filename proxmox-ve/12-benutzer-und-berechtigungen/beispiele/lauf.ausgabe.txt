@@ -1,0 +1,7 @@
+Nutzer Pfad       Recht    Ergebnis Grund
+anna   /vm/100    Energie  ERLAUBT  über /vm/100
+anna   /vm/101    Energie  NEIN     über /vm
+anna   /vm/101    Ansicht  ERLAUBT  über /vm
+ben    /vm/100    Konfig   ERLAUBT  über /vm
+cem    /vm/100    Ansicht  NEIN     keine Zuweisung
+cem    /speicher/lokal Ansicht  ERLAUBT  über /speicher

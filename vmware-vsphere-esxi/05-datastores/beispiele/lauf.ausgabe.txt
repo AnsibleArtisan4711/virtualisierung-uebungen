@@ -1,0 +1,11 @@
+VM       zugeteilt    Art   belegt
+dc01         60 GB  thick    60 GB
+web01       100 GB   thin    22 GB
+db01        200 GB   thin   130 GB
+file01      400 GB   thin   150 GB
+test01       80 GB   thin     8 GB
+
+Datastore: 500 GB
+Zugeteilt:  840 GB (168 % des Datastores, Überbuchung)
+Belegt:     370 GB (74 %)
+Wachstum bei +150 GB in db01: Belegung 104 % -> Datastore VOLL, thin-VMs bleiben stehen

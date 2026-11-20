@@ -1,0 +1,2 @@
+Gefundene Schnittstellenblöcke: lo, eno1, vmbr0, vmbr1, vmbr2
+  Hinweis: vmbr2: bridge-stp oder bridge-fd fehlt (laut Dokumentation üblich: stp off, fd 0)

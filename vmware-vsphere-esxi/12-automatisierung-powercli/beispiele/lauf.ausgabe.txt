@@ -1,0 +1,11 @@
+Connect-VIServer -Server <esxi-adresse>   # Anmeldeinformationen NICHT im Skript ablegen
+
+# web01
+New-VM -Name web01 -Datastore datastore1 -DiskGB 20 -MemoryMB 2048 -NumCpu 2 -NetworkName "VM Network"
+Start-VM -VM web01
+
+# db01
+New-VM -Name db01 -Datastore datastore1 -DiskGB 40 -MemoryMB 4096 -NumCpu 2 -NetworkName "Intern"
+Start-VM -VM db01
+
+Summe: 2 VMs, 6144 MB RAM, 60 GB Platte (Plan, nicht ausgeführt)

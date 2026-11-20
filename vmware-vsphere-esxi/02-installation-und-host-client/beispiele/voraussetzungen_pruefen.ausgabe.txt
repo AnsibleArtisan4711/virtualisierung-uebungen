@@ -1,0 +1,14 @@
+## 1. CPU-Merkmale (vmx/svm)
+Zeilen mit vmx/svm: 0
+
+## 2. Kerne und Arbeitsspeicher
+Kerne: 2, RAM: 7 GB
+
+## 3. Freier Platz in /tmp
+Frei: 26 GB
+
+## 4. Auswertung gegen die Richtwerte (2 Kerne, 8 GB, 40 GB, vmx/svm)
+- keine Virtualisierungserweiterung sichtbar
+- weniger als 8 GB RAM
+- weniger als 40 GB frei
+Richtwerte NICHT erfüllt

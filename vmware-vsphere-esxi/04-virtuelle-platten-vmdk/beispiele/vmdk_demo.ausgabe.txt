@@ -1,0 +1,13 @@
+## 1. 64 MB virtuell, 4 MB belegte Daten, drei Untertypen
+  monolithicSparse   belegt: 4.02 MiB
+  monolithicFlat     belegt: 4 MiB
+  streamOptimized    belegt: 12 KiB
+
+## 2. streamOptimized aus den Daten von monolithicSparse erzeugen (Export-Format, z. B. für OVF)
+  export.vmdk belegt: 112 KiB
+
+## 3. Inhalt vergleichen
+  Images are identical.
+
+## 4. Umwandlung nach raw und zurück nach vmdk, Vergleich
+  Images are identical.

@@ -1,0 +1,24 @@
+## 1. Hyper-V-Platte (VHDX, 128 MB virtuell, 6 MB Daten) vorbereiten
+  hv.vhdx belegt: 7.21 MiB
+
+## 2. Nach qcow2 (Proxmox VE, importierbar auf Dateispeicher) und nach VMDK (VMware)
+  pve.qcow2 belegt: 6.25 MiB
+  vm.vmdk   belegt: 6.02 MiB
+
+## 3. Inhalt vergleichen
+  qcow2: Images are identical.
+  vmdk:  Images are identical.
+
+## 4. Eigenschaften der Ergebnisse
+  pve.qcow2: file format: qcow2 
+  pve.qcow2: virtual size: 128 MiB
+  vm.vmdk: file format: vmdk 
+  vm.vmdk: virtual size: 128 MiB
+  vm.vmdk: virtual size: 134217728 
+
+## 5. Checkliste für eine echte Migration (Fachwissen, nicht bestätigt)
+  - Quell-VM sauber herunterfahren, Schnellstart/Ruhezustand von Windows aus
+  - Treiber (virtio bzw. VMware-Tools) vor dem Wechsel bereitstellen
+  - Firmware-Typ (BIOS/UEFI) in der Ziel-VM gleich einstellen
+  - Netzwerkkarte neu zuordnen, MAC/IP prüfen
+  - Test auf Kopie, Rückweg über die Quell-VM behalten

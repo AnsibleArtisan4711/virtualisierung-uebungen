@@ -1,0 +1,8 @@
+Last je Host: esx1 48/64 GB (75 %), esx2 32/64 GB (50 %), esx3 12/32 GB (38 %)
+
+Ausfalltest:
+  Ausfall esx1: alle VMs finden Platz
+  Ausfall esx2: KEIN Platz für app01
+  Ausfall esx3: alle VMs finden Platz
+
+Lastverteilung: esx1 ist am vollsten (75 %), esx3 am leersten (38 %)

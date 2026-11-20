@@ -1,0 +1,12 @@
+## 1. CPU-Merkmale für Virtualisierung (vmx = Intel VT-x, svm = AMD-V)
+Zeilen mit vmx/svm in /proc/cpuinfo: 0
+
+## 2. KVM-Gerät
+  ls: cannot access '/dev/kvm': No such file or directory
+
+## 3. Kernel-Module kvm, kvm_intel, kvm_amd
+  (keine Angabe: /proc/modules ist hier nicht vorhanden)
+
+## 4. Auswertung
+KEIN KVM: Proxmox VE würde auf diesem Rechner warnen, dass Hardware-Virtualisierung fehlt; VMs liefen nur emuliert (sehr langsam) oder gar nicht.
+Bei Hyper-V als Unterbau: auf dem Host bei ausgeschalteter VM 'Set-VMProcessor -VMName <Name> -ExposeVirtualizationExtensions $true' (laut Microsoft-Dokumentation) und MAC-Adress-Spoofing für den Netzwerkadapter einschalten.

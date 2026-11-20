@@ -1,0 +1,13 @@
+## 1. Bridge und zwei Gäste anlegen
+  va@if98: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master p06-br state forwarding priority 32 cost 2 
+  vb@if100: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 master p06-br state forwarding priority 32 cost 2 
+
+## 2. Erreichbarkeit von Gast a nach Gast b
+2 packets transmitted, 2 received, 0% packet loss, time 1007ms
+
+## 3. Gelernte MAC-Adressen der Bridge (Weiterleitungstabelle)
+  f6:51:a0:df:ff:85 dev va
+  ba:40:a9:dd:89:c1 dev vb
+
+## 4. Gast b von der Bridge trennen: keine Verbindung mehr
+1 packets transmitted, 0 received, 100% packet loss, time 0ms

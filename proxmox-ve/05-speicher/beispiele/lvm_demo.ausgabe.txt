@@ -1,0 +1,17 @@
+## 1. Loop-Gerät als Ersatz für eine Platte (64 MB)
+Gerät: /dev/loop0
+
+## 2. Physical Volume und Volume Group anlegen
+Physical volume "/dev/loop0" successfully created.
+Volume group "p06vg" successfully created
+  p06vg 60.00m 60.00m   1
+
+## 3. Logical Volume anlegen (braucht den Device-Mapper)
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.185 (2022-05-18) and kernel driver (unknown version).
+Rückgabewert: 3
+
+## 4. Folgerung
+Proxmox VE legt für VM-Platten auf LVM je ein Logical Volume an (Fachwissen, nicht bestätigt); ohne Device-Mapper wäre das hier nicht möglich. Die Metadaten-Schritte (PV, VG) funktionieren auch ohne.

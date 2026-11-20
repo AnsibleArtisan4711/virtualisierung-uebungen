@@ -1,0 +1,11 @@
+Knoten   QDevice   Ausfall  Stimmen (da/gesamt) Mehrheit Quorum   Folge
+3        nein      0        3/3                2        ja       normal
+3        nein      1        2/3                2        ja       normal
+3        nein      2        1/3                2        NEIN     Cluster-Dateisystem nur lesbar, HA hält an
+2        nein      1        1/2                2        NEIN     Cluster-Dateisystem nur lesbar, HA hält an
+2        ja        1        2/3                2        ja       normal
+2        ja (aus)  1        1/3                2        NEIN     Cluster-Dateisystem nur lesbar, HA hält an
+4        nein      2        2/4                3        NEIN     Cluster-Dateisystem nur lesbar, HA hält an
+4        ja        2        3/5                3        ja       normal
+5        nein      2        3/5                3        ja       normal
+5        nein      3        2/5                3        NEIN     Cluster-Dateisystem nur lesbar, HA hält an

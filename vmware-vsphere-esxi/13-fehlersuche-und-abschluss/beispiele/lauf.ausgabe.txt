@@ -1,0 +1,23 @@
+ZEILE  : 2026-11-20T10:01:11Z vmx: Failed to power on VM web01: insufficient memory resources
+URSACHE: zu wenig Ressourcen oder Reservierung
+PRÜFEN : Reservierungen und freie Kapazität prüfen (ressourcen_rechner.py)
+
+ZEILE  : 2026-11-20T10:02:03Z hostd: Task failed: Network "Test2" not found
+URSACHE: Portgruppe fehlt
+PRÜFEN : Portgruppen und VM-Adapter vergleichen (portgruppen_pruefen.py)
+
+ZEILE  : 2026-11-20T10:03:44Z vpxa: Datastore datastore1 full - no space left on device
+URSACHE: Datastore voll
+PRÜFEN : Belegung je Datastore, Snapshots und dünne Platten prüfen (datastore_rechner.py)
+
+ZEILE  : 2026-11-20T10:04:10Z hostd: Anmeldung fehlgeschlagen: root von 10.7.0.99
+URSACHE: Anmeldung fehlgeschlagen
+PRÜFEN : Benutzer, Rolle, Sperren prüfen (rollen_modell.py)
+
+ZEILE  : 2026-11-20T10:05:00Z hostd: Operation requires license: vMotion
+URSACHE: Lizenz/Funktion nicht verfügbar
+PRÜFEN : Lizenzstand prüfen (gratis_grenzen_pruefen.py)
+
+ZEILE  : 2026-11-20T10:06:30Z vmkernel: cpu3:12345)Heartbeat: ok
+URSACHE: unbekannt (keine Regel)
+

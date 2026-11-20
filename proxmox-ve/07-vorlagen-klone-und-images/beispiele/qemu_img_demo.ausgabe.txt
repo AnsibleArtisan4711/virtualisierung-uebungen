@@ -1,0 +1,24 @@
+## 1. Leeres Abbild in vier Formaten anlegen (je 64 MB virtuell)
+  disk.raw Format: raw    belegt: 4 KiB
+  disk.qcow2 Format: qcow2  belegt: 196 KiB
+  disk.vmdk Format: vmdk   belegt: 12 KiB
+  disk.vhdx Format: vhdx   belegt: 1.21 MiB
+
+## 2. Daten schreiben und in andere Formate umwandeln
+  conv.qcow2  belegt: 8.25 MiB
+  conv.vmdk   belegt: 144 KiB
+  conv.vhdx   belegt: 9.21 MiB
+
+## 3. Inhalt prüfen: die umgewandelten Abbilder enthalten dieselben Daten wie das Original
+  conv.qcow2: Images are identical.
+  conv.vmdk: Images are identical.
+  conv.vhdx: Images are identical.
+
+## 4. Basisabbild und Overlay (Backing File)
+  klon1 belegt: 196 KiB, Basis: conv.qcow2
+  klon2 belegt: 196 KiB, Basis: conv.qcow2
+Nach 1 MB Schreiben in klon1:
+  klon1 belegt: 1.25 MiB
+
+## 5. Overlay mit der Basis zusammenführen (vollständiger Klon)
+  voll1 belegt: 8.25 MiB, Basis: keine

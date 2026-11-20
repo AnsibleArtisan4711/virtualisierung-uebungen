@@ -1,0 +1,6 @@
+vSwitch0  Uplinks: vmnic0  Portgruppen: Management(VLAN 0), VM Network(VLAN 0), DMZ(VLAN 20), Test(VLAN 30)
+vSwitch1  Uplinks: -  Portgruppen: Intern(VLAN 40), Kaputt(VLAN 5000)
+
+Hinweis: vSwitch1: kein Uplink – nur interner Verkehr, keine Verbindung nach außen
+Hinweis: vSwitch1/Kaputt: VLAN-ID 5000 unzulässig
+Hinweis: VM test01: Portgruppe "Test2" existiert nicht
